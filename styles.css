@@ -1,0 +1,150 @@
+* {
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#04044f;
+}
+
+.all{
+  width:95%;
+  height:100%;
+  background-color:rgb(255, 255, 255);
+  border:1px solid #DDD;
+  
+}
+
+.header{
+  width:100%;
+  height:75vh;
+  background: linear-gradient(to right, #3440a8, #cc2b7e);
+  
+}
+
+.top{
+  width:100%;
+  height:25%;
+  opacity:1;
+}
+
+.logo{
+  float:left;
+  color:rgb(255, 255, 255);
+  margin-left:25px;
+  
+}
+
+.links{
+  float:right;
+  margin:35px;
+}
+
+a{
+  color:rgb(255, 255, 255);
+  padding:13px;
+  font-weight:500;
+  text-decoration:none;
+  cursor:pointer;
+}
+.header-content{
+  
+}
+.header-content h1{
+   color:rgb(255, 255, 255);
+  text-align:center;
+  font-size:3.6rem;
+  line-height:30px;
+  text-transform:uppercase;
+}
+
+.header-content p{
+  color:rgb(255, 255, 255, .8);
+  text-align:center;
+  width:75%;
+  margin:auto;
+  font-weight:300;
+  line-height:25px;
+}
+
+.field{
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:space-between;
+  padding:60px;
+}
+
+input{
+  margin:10px;
+  width:350px;
+  height:50px;
+  padding:15px;
+  border:0;
+  border-radius:5px;
+}
+
+button{
+  border:0;
+  border-radius:5px;
+  margin-top:10px;
+  width:220px;
+  height:50px;
+  text-transform:uppercase;
+  font-weight:600;
+  background: linear-gradient(to right, #f5870a, #db3bb9);
+}
+
+.content{
+  padding:20px;
+  width:75%;
+  display:grid;
+  grid-template-columns:1fr 5fr;
+  grid-template-rows:min-content auto;
+  grid-template-areas:"img title"
+    "img text";
+  grid-column-gap:1.2em;
+}
+
+.one, .two{
+  border-bottom:3px dotted #DDD;
+}
+
+.content img{
+  grid-area:img;
+  width:100px;
+  height:100px;
+  margin-top:40px;
+  
+}
+
+.content h1{
+  grid-area:title;
+  color:#3440a8;
+}
+
+.content p{
+  grid-area:text;
+  font-weight:300;
+  color:rgb(0, 0, 0, .7);
+  line-height:25px;  
+}
+.social-icons {
+  margin-top: 10px;
+}
+
+
+.end{
+  width:100%;
+  height:80px;
+  background: linear-gradient(to right, #cc2b7e, #3440a8);
+  text-align:center;
+  text-transform:uppercase;
+  color:white;
+  padding:30px;
+  font-weight:600;
+}
